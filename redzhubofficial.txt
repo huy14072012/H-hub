@@ -1,0 +1,38 @@
+--[[ WARNING: Heads up! This script has not been verified by Redzhubscripts.com Use at your own risk! ]] 
+ 
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/huy384/redzHub/refs/heads/main/redzHub.lua"))()
+ 
+ 
+
+
+Scripts:
+-- Redz Hub Script: https://redzhubscripts.com/
+-- Garden Horizons Script : https://gardenhorizonsscripts.com/
+-- Grow a Garden Script: https://growagardenscript.com/
+-- Speed Hub Script: https://speedhubscript.com/
+-- Fisch Scripts: https://fischscripts.net/
+-- Banana Hub Script: https://bananahubscript.com/
+-- Dead Rails Script: https://deadrailsscript.io/
+-- Blox Fruits Scripts: https://bloxfruitscripts.org/
+-- Arise Crossover Script: https://arisecrossoverscripts.com/
+-- Dead Rails Script: https://rivalscript.org/
+-- Brookhaven Script: https://brookhavenscripts.com/
+-- Blue Lock Rivals Script: https://bluelockrivalsscripts.com/
+-- All Roblox Scripts: https://krnl.vip/
+
+Executors:
+Mobile:
+-- Get Krnl: https://thekrnl.com/
+-- Krnl Executor & Scripts: https://krnl.vip/
+-- Delta: https://deltaexploits.com/
+-- Fluxus Executor: https://fluxus.mobi/
+-- Cryptic Executor: https://crypticexecutor.com/
+-- Nebula Executor: https://nebulaexecutor.com/
+-- Cubix Executor: https://cubixexecutor.com/
+PC:
+-- Xeno Executor: https://xeno-executor.com/
+-- Argon Executor: https://argonexecutor.org/
+iOS:
+-- Delta iOS: https://deltaexploits.com/
+-- Codex iOS: https://codexexecutor.co/
