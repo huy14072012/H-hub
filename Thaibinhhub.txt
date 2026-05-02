@@ -1,33 +1,13 @@
--- Khởi tạo Menu (Sử dụng thư viện Redz)
 local L = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDZHUB/LibraryV2/main/Source.lua"))()
-
-local Window = L:MakeWindow({
-  Title = "THÁI BÌNH HUB", -- Tên Hub của bạn nè
-  SubTitle = "By Huy384",
-  SaveFolder = "ThaiBinhConfig.json"
+local W = L:MakeWindow({
+  Title = "THÁI BÌNH HUB", 
+  SubTitle = "By Huy384", 
+  SaveFolder = "ThaiBinh.json"
 })
-
--- Tạo Tab Cày Cuốc
-local Tab1 = Window:MakeTab({ Name = "Auto Farm", Icon = "rbxassetid://4483345998" })
-
-Tab1:AddToggle({
-  Name = "Auto Farm Level",
-  Default = false,
-  Callback = function(Value)
-    _G.AutoFarm = Value
-    -- Sau này mình sẽ giúp bạn điền code Farm vào đây
+local T = W:MakeTab({Name = "Main", Icon = "rbxassetid://4483345998"})
+T:AddButton({
+  Name = "Kiem tra Script", 
+  Callback = function() 
+    L:SetNotify("Thành Công", "Script đang chạy cực mượt!", 3)
   end
 })
-
--- Tạo Tab Tiện Ích (Dành cho việc chế cháo trong game)
-local Tab2 = Window:MakeTab({ Name = "Tiện Ích", Icon = "rbxassetid://4483345998" })
-
-Tab2:AddButton({
-  Name = "Dịch chuyển tới Đảo Bí Ẩn",
-  Callback = function()
-    -- Code Teleport Mirage
-    print("Đang bay tới đảo...")
-  end
-})
-
-L:SetNotify("Thành Công", "Chào mừng Pháp Sư Thái Bình!", 3)
