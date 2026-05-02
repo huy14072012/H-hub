@@ -1,13 +1,4 @@
 local L = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDZHUB/LibraryV2/main/Source.lua"))()
-local W = L:MakeWindow({
-  Title = "THÁI BÌNH HUB", 
-  SubTitle = "By Huy384", 
-  SaveFolder = "ThaiBinh.json"
-})
+local W = L:MakeWindow({Title = "THAI BINH HUB", SubTitle = "Test 1", SaveFolder = "test.json"})
 local T = W:MakeTab({Name = "Main", Icon = "rbxassetid://4483345998"})
-T:AddButton({
-  Name = "Kiem tra Script", 
-  Callback = function() 
-    L:SetNotify("Thành Công", "Script đang chạy cực mượt!", 3)
-  end
-})
+T:AddButton({Name = "Bam vao day", Callback = function() print("Code da chay!") end})
