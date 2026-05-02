@@ -1,38 +1,33 @@
---[[ WARNING: Heads up! This script has not been verified by Redzhubscripts.com Use at your own risk! ]] 
- 
+-- Khởi tạo Menu (Sử dụng thư viện Redz)
+local L = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDZHUB/LibraryV2/main/Source.lua"))()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/huy384/redzHub/refs/heads/main/redzHub.lua"))()
- 
- 
+local Window = L:MakeWindow({
+  Title = "THÁI BÌNH HUB", -- Tên Hub của bạn nè
+  SubTitle = "By Huy384",
+  SaveFolder = "ThaiBinhConfig.json"
+})
 
+-- Tạo Tab Cày Cuốc
+local Tab1 = Window:MakeTab({ Name = "Auto Farm", Icon = "rbxassetid://4483345998" })
 
-Scripts:
--- Redz Hub Script: https://redzhubscripts.com/
--- Garden Horizons Script : https://gardenhorizonsscripts.com/
--- Grow a Garden Script: https://growagardenscript.com/
--- Speed Hub Script: https://speedhubscript.com/
--- Fisch Scripts: https://fischscripts.net/
--- Banana Hub Script: https://bananahubscript.com/
--- Dead Rails Script: https://deadrailsscript.io/
--- Blox Fruits Scripts: https://bloxfruitscripts.org/
--- Arise Crossover Script: https://arisecrossoverscripts.com/
--- Dead Rails Script: https://rivalscript.org/
--- Brookhaven Script: https://brookhavenscripts.com/
--- Blue Lock Rivals Script: https://bluelockrivalsscripts.com/
--- All Roblox Scripts: https://krnl.vip/
+Tab1:AddToggle({
+  Name = "Auto Farm Level",
+  Default = false,
+  Callback = function(Value)
+    _G.AutoFarm = Value
+    -- Sau này mình sẽ giúp bạn điền code Farm vào đây
+  end
+})
 
-Executors:
-Mobile:
--- Get Krnl: https://thekrnl.com/
--- Krnl Executor & Scripts: https://krnl.vip/
--- Delta: https://deltaexploits.com/
--- Fluxus Executor: https://fluxus.mobi/
--- Cryptic Executor: https://crypticexecutor.com/
--- Nebula Executor: https://nebulaexecutor.com/
--- Cubix Executor: https://cubixexecutor.com/
-PC:
--- Xeno Executor: https://xeno-executor.com/
--- Argon Executor: https://argonexecutor.org/
-iOS:
--- Delta iOS: https://deltaexploits.com/
--- Codex iOS: https://codexexecutor.co/
+-- Tạo Tab Tiện Ích (Dành cho việc chế cháo trong game)
+local Tab2 = Window:MakeTab({ Name = "Tiện Ích", Icon = "rbxassetid://4483345998" })
+
+Tab2:AddButton({
+  Name = "Dịch chuyển tới Đảo Bí Ẩn",
+  Callback = function()
+    -- Code Teleport Mirage
+    print("Đang bay tới đảo...")
+  end
+})
+
+L:SetNotify("Thành Công", "Chào mừng Pháp Sư Thái Bình!", 3)
