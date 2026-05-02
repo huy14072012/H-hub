@@ -1,4 +1,0 @@
-local L = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDZHUB/LibraryV2/main/Source.lua"))()
-local W = L:MakeWindow({Title = "THAI BINH HUB", SubTitle = "Test 1", SaveFolder = "test.json"})
-local T = W:MakeTab({Name = "Main", Icon = "rbxassetid://4483345998"})
-T:AddButton({Name = "Bam vao day", Callback = function() print("Code da chay!") end})
